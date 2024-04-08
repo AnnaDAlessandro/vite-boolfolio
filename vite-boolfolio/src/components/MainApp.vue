@@ -22,7 +22,7 @@ export default {
   mounted() {
     this.getProjects();
   }
-}
+}   
 </script>
 
 
