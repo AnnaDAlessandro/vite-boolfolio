@@ -35,8 +35,8 @@ export default {
     <h2>Posto per stampare i Project</h2>
 
 
-    <div v-if="loading">Caricamento...</div>
-    <ProjectCard v-else :project="arrayProjects" />
+    <ProjectCard  v-for="(element,index) in arrayProjects"
+        :key="element.id" :project="element"/>
      
   </main>
 </template>
