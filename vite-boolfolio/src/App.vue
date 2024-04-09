@@ -26,7 +26,7 @@ export default{
 <template>
   <h1>Ciao dal Frontend</h1>
   <MainApp/>
-  <ProjectCard></ProjectCard>
+
 
 </template>
 
