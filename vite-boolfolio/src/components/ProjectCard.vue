@@ -17,19 +17,24 @@ export default {
 
 <template>
    
-    <main>
+
+
+
+   <template>
+  <main>
     <div class="project-card">
-      <h3>Progetti:</h3>
-    <ul>
-      <li v-for="(project, index) in project" :key="index">
-        {{ project.title }}
-      </li>
-      <li v-for="(project, index) in project" :key="index">
-        {{ project.content }}
-      </li>
-    </ul>
+      <h3>Progetto:</h3>
+    
     </div>
-    </main>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5>{{ project.title }}</h5>
+        <p>{{ project.content }}</p>
+        <a href="#" class="btn btn-primary">Vai da qualche parte</a>
+      </div>
+    </div>
+  </main>
+</template>
   </template>
   
   <style scoped>
