@@ -9,7 +9,7 @@ export default {
   },
   data() {
     return {
-      // Dati del componente
+            
     };
   }
 };
