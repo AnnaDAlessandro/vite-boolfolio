@@ -19,8 +19,15 @@ export default {
    
     <main>
     <div class="project-card">
-      <h3>{{ project.title }}</h3>
-      <p>{{ project.description }}</p>
+      <h3>Progetti:</h3>
+    <ul>
+      <li v-for="(project, index) in project" :key="index">
+        {{ project.title }}
+      </li>
+      <li v-for="(project, index) in project" :key="index">
+        {{ project.content }}
+      </li>
+    </ul>
     </div>
     </main>
   </template>
