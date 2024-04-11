@@ -1,11 +1,8 @@
 <script >
 
-import AppHeader from './components/AppHeader.vue'
 export default{
   components:{
- 
-    AppHeader
-
+   
   },
   data(){
     return{
@@ -24,12 +21,8 @@ export default{
 </script>
 
 <template>
+    <h1>Ciao</h1>
   
-  <AppHeader/>
-
-
-
-  <router-view></router-view>
 
 </template>
 
