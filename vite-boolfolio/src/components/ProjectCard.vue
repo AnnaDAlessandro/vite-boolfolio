@@ -33,7 +33,7 @@ export default {
 
     
     <div class="card my-5" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="" class="card-img-top" alt="">
       <div class="card-body">
         <h5 class="card-title">{{ title }}</h5>
         <p class="card-text">{{ content }}</p>
