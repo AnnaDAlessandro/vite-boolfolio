@@ -1,16 +1,24 @@
 <script>
 export default {
   name: 'ProjectCard',
-  props: {
-    project: {
-      type: Object,
-      required: true
-    }
-  },
+  props:
+    [
+    'title',
+    'content',
+    'slug',
+    'category',
+    'technologies'
+  ],
   data() {
     return {
             
     };
+  },
+  methods:{
+    
+  },
+  mounted(){
+
   }
 };
 </script>
@@ -18,43 +26,29 @@ export default {
 
 
 
-   <template>
-  <main>
-    <div class="project-card">
-    <h3>Progetto:</h3>
-    <div class="card-container">
-        <div class="card-body">
-          <h5 class="card-title">{{ project.title }}</h5>
-          <p class="card-text">{{ project.content }}</p>
-          <a href="#" class="btn btn-primary">Vai da qualche parte</a>
-        </div>
+<template>
+
+  <router-link :to="{ name: 'single-project', params: { slug:slug } }">
+    <div class="container">
+
+    
+    <div class="card my-5" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{ title }}</h5>
+        <p class="card-text">{{ content }}</p>
+        <p>Categoria:{{ category }}</p>
+        <span v-for="(element,index) in technologies" :key="index">Tecnologia Utilizzata:{{ element.name }}</span>
       </div>
     </div>
+  </div>
 
-  </main>
+  </router-link>
 </template>
   
   
   <style scoped >
-  .project-card {
-  margin-bottom: 20px; /* Aggiungi spazio sotto la sezione */
-}
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; /* Distribuisci gli spazi tra le card */
-}
-
-.card {
-  width: calc(25% - 10px); /* Imposta la larghezza di ogni card al 25% del contenitore meno lo spazio tra le card */
-  margin-bottom: 20px; /* Aggiungi spazio tra le card */
-}
-
-.card-body {
-  text-align: center; 
-}
-
+  
   
   </style>
   

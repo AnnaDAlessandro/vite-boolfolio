@@ -1,31 +1,25 @@
-<script >
 
-export default{
-  components:{
-    
-
-  },
-  data(){
-    return{
-
-    }
-  },
-  methods:{
-    
-  },
-  mounted(){
-
+ <script>
+export default {
+  name: 'ProjectList',
+ 
+  data() {
+    return {
+            
+    };
   }
-
- }
-
+};
 </script>
+   
 
-<template>
- <h1>BIONDA</h1>
 
+
+   <template>
+ <h3>Ciao Dalla Lista</h3>
 </template>
-
-<style scoped>
-
-</style>
+  
+  
+  <style scoped >
+  
+  
+  </style>
